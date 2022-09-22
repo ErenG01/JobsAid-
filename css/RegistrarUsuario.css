@@ -1,0 +1,97 @@
+
+body{
+    background-color: var(--secundary-color);
+}
+.container{
+   /* background-color: brown;*/
+    display: flex;
+    margin:  auto;
+    margin-top: 10em;
+    margin-bottom: 5em;;
+    width: 80%;
+    
+}
+.container2{
+   /* background-color: rgb(116, 106, 106);*/
+    
+    margin: 5em auto;
+    width: 50%;
+    
+}
+
+
+.formulario{
+    /*background-color: rgb(51, 255, 0);*/
+    width: 60%;
+    margin: auto;
+    margin-top: 20em;
+    text-align: center;
+    border: solid 1px;
+    border-radius: 7px;
+    padding: 1em 1em;
+}
+.formulario_Sesion{
+    /*background-color: blue;*/
+    width: 60%;
+    margin: auto;
+    text-align: center;
+    border: solid 1px;
+    border-radius: 7px;
+    padding: 1em 1em;
+}
+.formulario input{
+    text-align: center;
+}
+.formulario_Sesion input{
+    text-align: center;
+}
+.containerlogo{
+   
+    padding: 0px;
+   /* background-color: coral;*/
+    width: 40%;
+    text-align: center;
+   
+    
+}
+.containerlogo img{
+    width: 400px;
+   
+}
+.logoscroll{
+    /*background-color: aquamarine;*/
+    width: 70%;
+    margin: auto;
+    position: sticky;
+    top: 30%;
+}
+footer{
+    background-color: black;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    position: fixed;
+    top: 90%;
+    width: 100%;
+    
+}
+.credits{
+   /* background-color:black;*/
+    margin: auto;
+    width: 50%;
+    color: white;
+}
+.credits ul {
+  /* background-color: gray;*/
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+   
+   
+}
+.credits ul li{
+    margin: auto;
+    list-style: none;
+    width: 20%;
+    display: flex;
+}
+

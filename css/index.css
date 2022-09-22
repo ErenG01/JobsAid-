@@ -1,0 +1,134 @@
+@import url(_reset.css);
+@import url(_variables.css);
+body{
+    font-family: "Montserrat", sans-serif;
+}
+.formulario{
+    background-color:aliceblue;
+    margin: auto;
+    text-align: center;
+    width: 600px;
+    height: 100px;
+    padding-top: 1em;
+}
+.header_img{
+    margin-top: 3em;
+    margin-bottom: 3em;
+}
+.header_img .h4{
+    text-align: center;
+}
+.HeaderAndForm{
+    z-index: 1;
+    background-image: url("");
+    background-repeat: no-repeat;
+
+    margin: auto;
+    padding-bottom: 1em;
+    position: relative;
+    width: 100%;
+}
+button.btn.btn-primary{
+    margin: 1em auto;
+}
+
+.card__title{
+    margin:auto;
+    text-align: center;
+}
+
+.Opc_filters label {
+    
+    margin-left: 11em;
+   
+}
+
+.inputs_filters{
+    margin: auto;
+    text-align: center;
+    margin-left: 20px;      
+}
+.inputs_filters input{
+    background-color:rgba(187, 187, 187, 0.664);
+    width: 150px;
+    height: 45px;
+    border-radius: 7px;
+    text-align: center;
+    font-size: 13px;
+    
+}
+.filtro{
+    margin:  auto;
+    text-align: center;
+    align-items: flex-end;
+
+}
+.filtrov2{
+    text-align: center;
+}
+.filtrov2 input{
+    text-align: center;
+    border: none;
+}
+.labeltext{
+
+    
+    border: solid 1px ;
+    border-color: lightgray;
+    border-radius: 5px;
+}
+.ContainerJobs{
+    width: 50%;
+    display: flex;
+    margin: 3em auto;
+    /*background-color: blue;*/
+    border-spacing: 3em;
+}
+
+.MainContainerJob1{
+
+    /*background-color: brown;*/
+    width: 50%;
+    
+   
+    
+}
+
+
+
+.MainContainerJob{
+    background-color: white;
+    width: 80%;
+    margin: 1em auto;
+    border-radius: 7px;
+    
+    padding: 1em 1em;
+    border: solid 1px;
+    border-color: lightgray;
+    right: 13em;
+    
+    
+}
+.MainContainerJob ul li{
+    list-style: none;
+    line-height: 1em;
+}
+
+.AsideContainerJob{
+    background-color: white;
+    width: 50%;
+    height: 30%;
+    position: sticky;
+    top: 10%;
+    border: solid 1px;
+    padding: 1em 1em;
+    border-radius: 7px;
+    margin-top: 1em;
+    border-color: lightgray;
+    
+
+    
+    
+}
+
+

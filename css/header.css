@@ -1,0 +1,49 @@
+
+.navBox{
+  width: 50%;
+ /* background-color: chartreuse;*/
+  margin: auto;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  
+}
+.Navegator{
+  
+  background-color: lightgray;
+ 
+ 
+
+}
+nav{
+  margin: auto;
+  width: 80%;
+  
+}
+.navBox nav ul{
+  
+ /* background-color: blue;*/
+  margin: auto;
+  
+  width: 100%;
+  display: flex;
+  
+
+}
+.navBox nav ul li {
+  
+  align-items: center;
+  margin: auto;
+  list-style: none;
+
+}
+
+.Logo img{
+  width: 300px;
+  text-align: center;
+  /*background-color: brown;*/
+  margin: auto;
+  
+}
+
+

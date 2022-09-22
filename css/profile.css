@@ -1,0 +1,33 @@
+.navUsuario{
+   /* background-color: blue;*/
+    width: 50%;
+    margin: 3em auto;
+    border: solid 1px;
+    border-radius: 7px;
+}
+.navUsuario ul{
+    display: flex;
+    margin: auto;
+}
+.navUsuario ul li{
+    list-style: none;
+    margin: auto;
+    text-align: center;
+}
+
+.InfoBox{
+   /* background-color: brown;*/
+    width: 30%;
+    margin: auto;
+    text-align: center;
+    border: solid 1px;
+    border-radius: 7px;
+    padding-top: 2em;;
+}
+.imgPerfil{
+    width: 150px;
+}
+.InfoBox .ImgCV{
+
+    width: 60px;
+}

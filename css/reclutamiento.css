@@ -1,0 +1,52 @@
+.WelcomeMessage{
+    /* background-color: blue;*/
+     width: 50%;
+     margin: 5em auto;
+     display: flex;
+     text-align: center;
+     
+ }
+ .WelcomemessageBox{
+    /* background-color: aqua;*/
+     width: 40%;
+ }
+ .WelcomeMessage2{
+    /* background-color: brown;*/
+     width: 50%;
+     margin: auto;
+     text-align: center;
+ }
+ .List{
+     /*background-color: gray;*/
+     width: 50%;
+     margin: 3em auto;
+ }
+ .List ul{
+     display: flex;
+     
+ }
+ .List ul li{
+     border: solid 1px;
+     border-radius: 7px;
+     list-style: none;
+     text-align: center;
+     margin: 0em 2em;;
+ }
+ .Begin{
+   /*  background-color: chartreuse;*/
+     width: 50%;
+     margin: auto;
+     text-align: center;
+ }
+ .ReclutadorIMG{
+     width: 300px;
+     margin: auto;
+ }
+
+ footer ul li{
+    list-style: none;
+
+ }
+ footer ul{
+    color: aliceblue;
+ }
