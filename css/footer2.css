@@ -1,0 +1,19 @@
+#footers2{
+    /*background-color: black;*/
+    color: rgb(3, 3, 3);
+    
+}
+.credits{
+    width: 60%;
+    /*background-color: gray;*/
+    margin: auto;
+    padding-top: 4em;
+    padding-bottom: 2em;
+}
+.credits ul{
+    display: flex;
+    margin: auto;
+}
+.credits ul li{
+    margin: auto;
+}

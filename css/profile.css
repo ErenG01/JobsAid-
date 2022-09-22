@@ -17,12 +17,13 @@
 
 .InfoBox{
    /* background-color: brown;*/
-    width: 30%;
+    width: 25%;
     margin: auto;
     text-align: center;
     border: solid 1px;
     border-radius: 7px;
-    padding-top: 2em;;
+    padding-top: 2em;
+    padding-bottom: 2em;;
 }
 .imgPerfil{
     width: 150px;
