@@ -4,7 +4,7 @@ const contenido = `
         <ul>
             <li><a href="Profile.html">Perfil</a></li>
             <li><a href="Postulaciones.html">postulaciones</a</li>
-            <li><a href="EmailBox.html">bandeja de entrada</a></li>
+            <li><a href="Emailbox.html">bandeja de entrada</a></li>
             <li><a href="Settings.html">configuracion</a></li>
             <li>hoja de vida</li>
         </ul>
