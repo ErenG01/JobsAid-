@@ -1,6 +1,6 @@
 
 .navBox{
-  width: 50%;
+  width: 70%;
  /* background-color: chartreuse;*/
   margin: auto;
   display: flex;
@@ -25,7 +25,7 @@ nav{
  /* background-color: blue;*/
   margin: auto;
   
-  width: 100%;
+  width: 80%;
   display: flex;
   
 
@@ -45,5 +45,26 @@ nav{
   margin: auto;
   
 }
+.login{
+  display: flex;
+  border: solid 1px;
+  /*background-color: rgb(59, 59, 134);*/
+  border-radius: 7px;
+  padding-left: 1em ;
+  padding-right: 1em ;
+}
+.login2{
+  
+  border: solid 1px;
+  /*background-color: rgb(59, 59, 134);*/
+  border-radius: 7px;
+  padding-left: 1em ;
+  padding-right: 1em ;
+}
+.login4{
+  display: flex;
+  /*background-color: brown;*/
+}
+
 
 

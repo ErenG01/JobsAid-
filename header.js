@@ -18,10 +18,10 @@ const content = `
   <nav>
     
       <ul>
-        <li class="header__link"><a href="index.html">Inicio</a></li>
-        <li class="header__link"><a href="Reclutamiento.html">Publicar oferta</a></li>
-        <li class="header__link"><a href="RegistrarUsuario.html">Hoja de vida</a></li>
-        <li class="header__link"><a href="RegistrarUsuario.html">Inicar sesion</a></li>
+        <li class="header__link"><a href="index.php">Inicio</a></li>
+        <li class="header__link"><a href="Reclutamiento.php">Publicar oferta</a></li>
+        <li class="header__link"><a href="Acceso_Usuario.php">Hoja de vida</a></li>
+        <li class="header__link"><a href="Acceso_Usuario.php">Inicar sesion</a></li>
       </ul>
     
   </nav>

@@ -1,0 +1,44 @@
+nav{
+    background-color: black;   
+}
+nav img{
+    width: 250px;
+    
+}
+ul{
+    
+    width: 70%;
+    margin: auto;
+    align-items: center;
+    /*background-color: brown;*/
+    display: flex;
+    text-decoration: none;
+    
+}
+
+nav ul a:hover{
+    
+    text-decoration: none;
+}
+nav ul li{
+    text-align: center;
+    margin: auto;
+    list-style: none;
+    color: aliceblue;
+    
+}
+nav ul a{
+    text-decoration: none;
+    margin: auto;
+    
+}
+nav ul li:hover{
+    text-decoration: none;
+}
+.navegador{
+    width: 70%;
+    margin: auto;
+    background-color: aquamarine;
+}
+
+

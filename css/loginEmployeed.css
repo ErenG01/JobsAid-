@@ -1,0 +1,42 @@
+.contenedor{
+    /*background-color: cadetblue;*/
+    width: 50%;
+    margin: 10em auto;
+
+}
+
+
+.formLoginEmployeed{
+
+    width: 40%;
+    margin: 3em auto;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    padding-left: 1em;
+    padding-right: 1em;
+    border: solid 1px;
+    border-radius: 7px;
+}
+.boxLogo{
+   
+    width: 70%;
+    margin: auto;
+}
+img{
+    width: 350px;
+    margin: auto;
+    text-align: center;
+    
+}
+.contenedor2{
+    width: 50%;
+    
+    margin: auto;
+}
+h1{
+    text-align: center;
+}
+.buttons{
+    margin-top: 1em;
+    text-align: center;
+}

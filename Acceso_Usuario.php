@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -19,7 +20,7 @@
   <div class="containerlogo">
 
     <div class="logoscroll">
-      <a href="index.html"><img src="img/Logo_V3.png" alt=""></a>
+      <a href="index.php"><img src="img/Logo_V3.png" alt=""></a>
       
       <p>la mejor manera para encontrar el trabajo de tus sueños</p>
     </div>
@@ -33,14 +34,14 @@
     
    
 
-    <form class="formulario_Sesion">
+    <form action="iniciarSesion.php" method="post" class="formulario_Sesion" >
       <h1 class="H1Bienvenido_Sesion">Inicar sesion</h1>
        
         
         <input
           class="form-control mb-2"
           placeholder="Ingrese su correo"
-          type="email"
+          type="text"
           id="userEmail"
           name="userEmail"
         >
@@ -50,77 +51,76 @@
         placeholder="Contraseña"
         type="password"
         id="password" 
-        name="" 
+        name="password" 
         >
         
         <a href="" class="Forgetpassword">¿Olvidaste tu contraseña?</a>
         <br>
       
-        <button
-          class="btn btn-primary" id="button">Iniciar sesion</button
-          type="submit"
-        >
+        
+
+        <input type="submit" class= "btn btn-primary" name="btn_inicio_s" value = "Iniciar Sesion">
+
         <a href="#h1bienvenido" class="btn btn-primary">Registar</a>
         
-
-        
-      
-
 
 </form>
 
 <div>
-  <form class="formulario" id="FormularioRegistro">
+  <form action = "RegistrarUsuario.php" method= "POST" class="formulario" id="FormularioRegistro">
     <h1 class="H1Bienvenido" id="h1bienvenido">Bienvenido</h1>
       <input
         class="form-control mb-2"
         placeholder="Ingrese su nombre"
         type="text"
-        id="userName"
-        name="userName"
+        id="user_name"
+        name="user_name"
       >
       <input 
       class="form-control mb-2"
-      placeholder="ingrese su apellido"
+      placeholder="correo"
       type="text"
-      id=""
-      name=""
+      id="email_user"
+      name="email_user"
       >
-      <input
-      class="form-control mb-2"
-      placeholder="Pais" 
-      type="text"
-      id="inputpais"
-      name=""
-      >
+      
       <input
       class="form-control mb-1"
-      placeholder="Cuidad"
+      placeholder="usuario"
       type="text" 
-      id=""
-      name=""
+      id="user_lastname"
+      name="user_lastname"
       > 
-      <input
-      class="form-control mb-2"
-      placeholder="Fecha Nacimiento"
-      type="datetime-local"
-      id="" 
-      name="" 
-      >
+      
       <input
       class="form-control mb-2"
       placeholder="Contraseña"
       type="password"
-      id="" 
-      name="" 
+      id="user_password" 
+      name="user_password" 
       >
-      <input
-        class="form-control mb-2"
-        placeholder="Ingrese su correo"
-        type="email"
-        id=""
-        name=""
-      >
+
+      
+    <!-- imprimir los valores que se tiene guardados en la base de datos del rol -->
+      <?php
+      require("includes/db/conexion.php");
+				$query_rol = mysqli_query($conection,"select * from rol");
+				$result_rol =  mysqli_num_rows($query_rol);
+
+
+				?>
+      <select name="rol" id="rol">
+					<?php  
+						if($result_rol > 0)
+						{
+							while ($rol = mysqli_fetch_array($query_rol)){
+					?>
+							<option value="<?php echo $rol["idrol"]; ?>"><?php echo $rol["rol"] ?></option>
+					<?php
+							}
+						}
+					?>
+				</select>	
       <p>Al crear una cuenta o iniciar sesión, usted reconoce y acepta las condiciones de Job´s Aid. Además, reconoce nuestras políticas de cookies y privacidad. Recibirá mensajes de marketing y podrá darlos de baja en cualquier momento mediante el enlace para cancelar la suscripción que incluimos en nuestros mensajes, o según se detalla en nuestras condiciones.</p>
 
       <button
@@ -132,9 +132,10 @@
   </form>
     
   </div>  
-    
-</div>
 
+
+</div>
+ 
 
 
 </div>

@@ -1,0 +1,64 @@
+
+
+.navegator{
+    background-color: darkcyan;
+    display: flex;
+    margin-bottom: 4em;
+}
+
+nav{
+    width: 95%;
+    background-color: burlywood;
+    
+}
+.navegator ul{
+    width: 50%;
+    
+    background-color: beige;
+    margin: auto;
+}
+.navegator ul li{
+    width: 50%;
+    
+    background-color:darkgreen;
+    
+}
+.imagen{
+    width: 250px;
+    background-color: aquamarine;
+}
+.containerOpciones{
+    width: 10%;
+    background-color: blue;
+    height: 50em;
+    float: left;
+}
+.uls{
+list-style: none;
+/*background-color: bisque;*/
+width: 50%;
+height: 90%;
+margin: auto;
+
+}
+.containerOpciones .uls li{
+   /* background-color: blueviolet;*/
+    padding-bottom: 2em;
+    margin: 2em auto;
+    border: solid 1px;
+    border-radius: 7px;
+}
+.principal{
+    background-color: brown;
+    width: 50%;
+    height: 3em;
+    margin-bottom: 3em;
+}
+.filtro{
+    background-color: cadetblue;
+    height: 5em;
+    margin: auto;
+}
+.containerVacants{
+    background-color: chocolate;
+}

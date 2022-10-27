@@ -158,6 +158,8 @@ textarea {
   font-family: inherit;
 }
 
+/*******************************************************/
+
 body{
     font-family: "Montserrat", sans-serif;
 }
@@ -239,13 +241,13 @@ button.btn.btn-primary{
     width: 50%;
     display: flex;
     margin: 3em auto;
-    /*background-color: blue;*/
+    background-color: blue;
     border-spacing: 3em;
 }
 
 .MainContainerJob1{
 
-    /*background-color: brown;*/
+    background-color: brown;
     width: 50%;
     
    

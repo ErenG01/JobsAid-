@@ -1,9 +1,11 @@
+
+
 const navegUsu = document.getElementById('navega');
 const contenido = `
 <div class="navUsuario">
         <ul>
-            <li><a href="Profile.html">Perfil</a></li>
-            <li><a href="Postulaciones.html">postulaciones</a</li>
+            <li><a href="Profile.php">Perfil</a></li>
+            <li><a href="Postulaciones.php">postulaciones</a</li>
             <li><a href="Emailbox.html">bandeja de entrada</a></li>
             <li><a href="Settings.html">configuracion</a></li>
             <li>hoja de vida</li>
@@ -11,3 +13,5 @@ const contenido = `
 </div>        
 `;
 navegUsu.innerHTML = contenido;
+
+
