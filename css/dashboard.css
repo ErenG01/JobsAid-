@@ -1,7 +1,9 @@
-
+body{
+    background-color: rgba(240, 240, 240, 0.918);
+}
 
 .navegator{
-    background-color: darkcyan;
+    background-color: rgb(245, 245, 245);
     display: flex;
     margin-bottom: 4em;
 }
@@ -28,11 +30,17 @@ nav{
     background-color: aquamarine;
 }
 .containerOpciones{
-    width: 10%;
-    background-color: blue;
+    width: 13%;
+    background-color: rgb(54, 54, 94);
     height: 50em;
     float: left;
+    color: white;
+    position: fixed;
 }
+.containerOpciones img{
+    width: 250px;
+}
+
 .uls{
 list-style: none;
 /*background-color: bisque;*/
@@ -45,20 +53,100 @@ margin: auto;
    /* background-color: blueviolet;*/
     padding-bottom: 2em;
     margin: 2em auto;
-    border: solid 1px;
-    border-radius: 7px;
+    
+   
 }
+.uls li a{
+    color: white;
+    text-decoration: none;
+}
+.uls li a:hover{
+    color: white;
+    text-decoration: none;
+}
+
 .principal{
     background-color: brown;
     width: 50%;
     height: 3em;
-    margin-bottom: 3em;
+    text-align: center;
+    margin: 1em auto;
 }
-.filtro{
-    background-color: cadetblue;
-    height: 5em;
+.estadovacante{
+    background-color: rgb(21, 43, 43);
+    width: 50%;
     margin: auto;
 }
+.filters{
+    background-color: rgb(43, 105, 107);
+    margin: auto;
+}
+.formularioIndex{
+    margin: auto;
+}
+.filtro{
+    background-color: blue;
+    width: 50%;
+    margin: auto;
+}
+
 .containerVacants{
-    background-color: chocolate;
+    /*background-color: chocolate;*/
+    display: flex;
+    margin: auto;
+    width: 80%;
+
+}
+.containerVacants p{
+    margin: auto;
+}
+.container1{
+   /* background-color: coral;*/
+    width: 70%;
+    margin: auto;
+}
+.MainContainerJob{
+    background-color: white;
+    width: 98%;
+    margin: 1em auto;
+    border-radius: 7px;
+    
+    padding: 1em 1em;
+    border: solid 1px;
+    border-color: lightgray;
+    
+    
+    
+}
+.MainContainerJob ul li{
+    list-style: none;
+    line-height: 1em;
+}
+.ContainerCandidatos{
+    width: 70%;
+    height: 8em;
+    background-color: rgb(255, 255, 255);
+    margin: auto;
+    border: solid 1px rgb(240, 240, 240);
+}
+.candidatos{
+    width: 50%;
+    /*background-color: blue;*/
+    border: solid 1px;
+    margin: auto;
+}
+.infoUsuario ul li{
+    display: flex;
+    margin: auto;
+}
+.ContainerHV{
+    background-color: rgb(255, 255, 255);
+    width: 70%;
+    height: 8em;
+    margin: 3em auto;
+    border: solid 1px rgb(240, 240, 240);
+    border-radius: 7px;
+}
+.formHV form input{
+    margin: auto;
 }

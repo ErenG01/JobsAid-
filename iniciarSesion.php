@@ -4,6 +4,7 @@ require("includes/db/Conexion.php");
 
   session_start();
   $_SESSION['nombreusu'] = ""; 
+  $_SESSION['idemploy'] = ""; 
 
   
 
@@ -18,6 +19,7 @@ require("includes/db/Conexion.php");
        
       $rows = mysqli_fetch_assoc($result);
       $_SESSION['nombreusu'] = $rows['nombre'];
+      $_SESSION['idemploy'] = $rows['Id_usuario'];
       header("location: ./index.php");
     }else{
       echo"no logro entrar";

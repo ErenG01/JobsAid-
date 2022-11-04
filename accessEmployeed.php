@@ -3,7 +3,8 @@ require("includes/db/Conexion.php");
 
 
   session_start();
-  $_SESSION['nombreemployeed'] = ""; 
+  $_SESSION['nombreemployeed'] = "";
+  $_SESSION['idemploy'] = ""; 
 
   
 
@@ -18,6 +19,7 @@ require("includes/db/Conexion.php");
        
       $rows = mysqli_fetch_assoc($result);
       $_SESSION['nombreemployeed'] = $rows['nombreusuario'];
+      $_SESSION['idemploy'] = $rows['idEmpresa'];
       header("location: ./dashboard.php");
     }else{
       echo"no logro entrar";

@@ -1,4 +1,4 @@
-import {myprimerofuncion} from "./mysql.js"
+/*import {myprimerofuncion} from "./mysql.js"
 
 
 const showUsers = document.getElementById('usarioscontent');
@@ -19,5 +19,5 @@ const Showcontent = `
 showUsers.innerHTML = Showcontent;
 
 
-
+*/
 

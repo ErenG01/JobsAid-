@@ -1,15 +1,15 @@
 <?php
 SESSION_START();
-$condicion = "";
-if (!empty($_SESSION['nombreusu'])) {
-  $condicion = true;
-}else{
-  $condicion = false;
-}
-echo $condicion;
+
 
  
 
+if (!isset($_POST['buscadepartamento'])){$_POST['buscadepartamento'] = '';}
+if (!isset($_POST['buscarsalariodesde'])){$_POST['buscarsalariodesde'] = '';}
+if (!isset($_POST['buscarsalariohasta'])){$_POST['buscarsalariohasta'] = '';}
+if (!isset($_POST['tipodeEmpleo'])){$_POST['tipodeEmpleo'] = '';}
+if (!isset($_POST['buscafechahasta'])){$_POST['buscafechahasta'] = '';}
+if (!isset($_POST["modalidad"])){$_POST["modalidad"] = '';}
 
 
 
@@ -25,7 +25,7 @@ echo $condicion;
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
 
   
-    
+    <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/footer.css">
     
@@ -79,64 +79,133 @@ echo $condicion;
             
           </form>
 
-        </div>  
+      
         <hr>
-        </div>
-        <div class="filtro">
-   
-        </div>
-        <div class="filtrov2">
-          <form class="inputs_filters">
+  </div>
+        
+  <div class="filtro" id="filtro">   
+    <div class="col-11">
 
-            <input name="Salario" id="CBox_Salario" class="" placeholder="Salario" type="">
-            <input name="Modalidad" id="CBox_Modalidad" class="" placeholder="Modalidad" type="">
-            <input name="Cuidad" id="CBox_Cuidad" class="" placeholder="Cuidad" type="">
-            <input name="Area de trabajo" id="CBox_AreaTrabajo" class="" placeholder="Area de trabajo" type="">
-            <input name="Empresa" id="CBox_Empresa" class="" placeholder="Empresa" type="">
-            <button class="btn btn-primary">Filtrar</button>
+          <table class="table">
+                  <thead>
+                        <tr class="filters">
+                          <form id="formularioIndex" name="formularioIndex" action="index.php" method="POST"> 
+                                  <th>
+                                          Ciudad
+                                          <select  id="buscadepartamento" name="buscadepartamento" class="form-control mt-2" style="border: #bababa 1px solid; color:#000000;" >
+                                                  <?php if ($_POST["buscadepartamento"] != ''){ ?>
+                                                    <option value="<?php echo $_POST["buscadepartamento"]; ?>"><?php echo $_POST["buscadepartamento"]; ?></option>
+                                                  <?php } ?>
+                                                  <option value=""></option>
+                                                  <option value="Amazonas">Amazonas</option>
+                                                  <option value="Antioquia">Antioquia</option>
+                                                  <option value="Arauca">Arauca</option>
+                                                  <option value="Archipielago de san Andres">Archipielago de san Andres</option>
+                                                  <option value="Atlantico">Atlantico</option>
+                                                  <option value="Bogota D.C">Bogota D.C</option>
+                                                  <option value="Bolivar">Bolivar</option>
+                                                  <option value="Boyacá">Boyacá</option>
+                                                  <option value="Caldas">Caldas</option>
+                                                  <option value="Caquetá">Caquetá</option>
+                                                  <option value="Casanare">Casanare</option>
+                                                  <option value="Cauca">Cauca</option>
+                                                  <option value="Cesar">Cesar</option>
+                                                  <option value="Chocó">Chocó</option>
+                                                  <option value="Córdoba">Córdoba</option>
+                                                  <option value="Cundinamarca">Cundinamarca</option>
+                                                  <option value="Guainía">Guainía</option>
+                                                  <option value="Guaviare">Guaviare</option>
+                                                  <option value="Huila">Huila</option>
+                                                  <option value="La Guajira">La Guajira</option>
+                                                  <option value="Magdalena">Magdalena</option>
+                                                  <option value="Nariño">Nariño</option>
+                                                  <option value="Norte de Santander">Norte de Santander</option>
+                                                  <option value="Putumayo">Putumayo</option>
+                                                  <option value="Quindío">Quindío</option>
+                                                  <option value="Sucre">Sucre</option>
+                                                  <option value="Tolima">Tolima</option>
+                                                  <option value="Valle del Cauca">Valle del Cauca</option>
+                                                  <option value="Vaupés">Vaupés</option>
+                                                  <option value="Vichada">Vichada</option>
+                                                  
+                                          </select>
+                                  </th>
+                                  <th>
+                                          Salario desde:
+                                          <input type="text" id="buscarsalariodesde" name="buscarsalariodesde" class="form-control mt-2" value="<?php echo $_POST["buscarsalariodesde"]; ?>" style="border: #bababa 1px solid; color:#000000;" >
+                                  </th>
+                                  <th>
+                                          Salario hasta:
+                                          <input type="text" id="buscarsalariohasta" name="buscarsalariohasta" class="form-control mt-2" value="<?php echo $_POST["buscarsalariohasta"]; ?>" style="border: #bababa 1px solid; color:#000000;" >
+                                  </th>
+                                  <th>
+                                          Tipo de empleo
+                                          <select  id="tipodeEmpleo" name="tipodeEmpleo" class="form-control mt-2" style="border: #bababa 1px solid; color:#000000;" >
+                                                  <?php if ($_POST["tipodeEmpleo"] != ''){ ?>
+                                                    <option value="<?php echo $_POST["tipodeEmpleo"]; ?>"><?php echo $_POST["tipodeEmpleo"]; ?></option>
+                                                  <?php } ?>
+                                                  <option value=""></option>
+                                                  <option  value="tiempo Completo">tiempo Completo</option>
+                                                  <option  value="Indefinido">Indefinido</option>
+                                                  <option  value="Medio Tiempo">Medio Tiempo</option>
+                                                  <option  value="Temporal">Temporal</option>
+                                                  <option  value="Contrato">Contrato</option>
+                                          </select>
+                                  </th>
+                                  
+                                
+                                  <th>
+                                          modalidad
+                                          <select  id="modalidad" name="modalidad" class="form-control mt-2" style="border: #bababa 1px solid; color:#000000;" >
+                                                  <?php if ($_POST["modalidad"] != ''){ ?>
+                                                    <option value="<?php echo $_POST["modalidad"]; ?>"><?php echo $_POST["modalidad"]; ?></option>
+                                                  <?php } ?>
+                                                  <option value=""></option>
+                                                  <option  value="Presencial">Presencial</option>
+                                                  <option  value="Virtual">Virtual</option>
+                                                  <option  value="Hibrido">Hibirido</option>
+                                          </select>
+                                   </th>
+                                 
+        
+                                    
+                            </tr>
+                          </form>  
+                                                    
+                  </thead>
 
+          </table>
+          <input type="submit" id="btnFiltroVer" class="btn btn-primary" value="Ver" style="margin: auto;">
 
-
-          </form>
-        </div>
+                
+    </div>
+  </div>      
 
         <hr>
 
-    <div class="ContainerJobs">
+    <div class="ContainerJobs" id="ContainerJobs">
       
    
       <main class="MainContainerJob1">
 
-      <?php require("includes/db/conexion.php");
       
-      $sql="SELECT * FROM `oferta empleo`";
-      $result=mysqli_query($conection, $sql);
-      while($row=mysqli_fetch_assoc($result))
+        
       
-      
-      { ?>
 
-        <div class="MainContainerJob">
-          <h4 class="h4"><?php echo $row["titulo_vacante"];?></h4>
-          <p><?php echo $row["industria"];?></p>
-          <p><?php echo $row["LugarEmpleo"];?></p>
-        <br>
-          <ul>
-              <li><p>Salario:<?php echo $row["sueldo"];?></p></li>
-              <li><p><?php echo $row["descripcion_vacante"];?></p></li>
-              <li><p>Horario: lunes a viernes de 7:00am a 5:30pm</p></li>
-          </ul>
-
-          <br>
-          <p>publicado hace mas de 30 dias de Bogota,Cundinamarca</p>
+        <div class="MainContainerJobs" id="MainContainerJobs" >
+          
+          
         </div>
-
-        <?php } ?>
+      
+          
+       
+        
+        
       </main>
         
       
-      
-      <aside class="AsideContainerJob">
+      <div class="asidecontainervacantes" id="asidecontainervacantes"></div>
+      <aside class="AsideContainerJob" id="AsideContainerJob" >
 
         <h4 class="h4">Analista Administrativo Teletrabajo Bogota</h4>
 
@@ -145,7 +214,7 @@ echo $condicion;
         <p>Bogota, Cundinamarca</p>
         
         <button
-              class="btn btn-primary">Postularse</button
+              class="btn btn-primary" id="postularse">Postularse</button
               type="submit"
           >
         <button
@@ -175,19 +244,13 @@ echo $condicion;
           <br>
         <p>Si te encuentras interesado y cumples con el perfil, postúlate!</p>  
         <hr>
-        <?php
-        if ($condicion) {
-          
-        ?>
+        
         <button
-            class="btn btn-primary">Postularse al empleo</button
+            class="btn btn-primary" id="postularse">Postularse al empleo</button
             type="submit"
           >
-        <?php };  ?>
-        <button
-            class="btn btn-primary">Postularse</button
-            type="submit"
-          >
+        
+        
         
       
       </aside>
@@ -200,15 +263,19 @@ echo $condicion;
 
     <div id="usarioscontent">
 
-      <script type="module" src="mostrar.js"></script>
+     <button class=""btn btn-primary">
+
+     </button>
 
 
     </div>
-      
     
-        
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+
+    <script src="TASKS/app.js"></Script>
+
+   <script type="module" src="contenedor.js"></script>
       
       
-      <script type="module" src="../controllers/registro.controller.js"></script>
 </body>   
 </html>

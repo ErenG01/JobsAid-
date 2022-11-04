@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/LoginEmployeed.css">
 </head>
 <body>
+  
   <div class="contenedor">
     <div class="contenedor2">
       <a href="Reclutamiento.php"><div class="boxLogo"><img src="img/Logoemployeed_V2.png" alt="" class="imgLogo"> </div></a>

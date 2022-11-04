@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="mostrarvacante()">
+        click
+    </button>
+    <h1 id="title"></h1>
+    
+    <script>
+        function mostrarvacante(){
+            var objeto = new XMLHttpRequest();
+            objeto.open('POST','backend.php', true);
+            objeto.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+            objeto.onreadystatechange = function (){
+                console.log(objeto.responseText);
+                document.getElementById('title').innerHTML = objeto.responseText;
+            }
+            
+            objeto.send('username=maicol');
+            
+                }   
+    </script>
+    <script src="app.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    
+</body>
+</html>

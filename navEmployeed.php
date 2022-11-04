@@ -27,7 +27,7 @@
                 <a href><li>Encontrar candidatos</li></a>
                 
                 <a href="salir.php"><li>salir</li></a>
-                <li><?php echo $nombreEmployeed;?></li>
+                <a href="dashboard.php"><li><?php echo $nombreEmployeed;?></li></a>
                 
             </ul>
   <?php

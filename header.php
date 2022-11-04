@@ -14,7 +14,7 @@
 
 <div class="navBox"> 
 
-    <a href="index.html">
+    <a href="index.php">
 
   <div class="Logo">
     <img

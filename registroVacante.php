@@ -1,7 +1,8 @@
 <?php
 
 require("includes/db/Conexion.php");
-
+session_start();
+$idemp= $_SESSION['idemploy'];
 
 
 if (!empty($_POST)) {
@@ -25,7 +26,7 @@ $alert = "";
         $descripcionvac = $_POST['descVacant'];
         $alertemail = $_POST['emailAlerts'];
 
-        $sql1="insert into `oferta empleo`(industria,titulo_vacante,LugarEmpleo,numeroVacantes,sueldo, tiempoPago, CorreoAlertas, descripcion_vacante) values('$nombrIndustry','$tituloVac','$lugarvacante','$numvacantes','$salario','$timpopago','$descripcionvac','$alertemail')";
+        $sql1="insert into `oferta empleo`(industria,titulo_vacante,LugarEmpleo,numeroVacantes,sueldo, tiempoPago, CorreoAlertas, descripcion_vacante,idEmpresa) values('$nombrIndustry','$tituloVac','$lugarvacante','$numvacantes','$salario','$timpopago','$descripcionvac','$alertemail','$idemp')";
         /*$sql = "insert into empresas (nombreempresa,numempleados,nombreusuario,nit,numerotelesfono) values('$nombrempresa','$numEmpleados','$username','$nit','$numTelefono')";*/
         $result=mysqli_query($conection, $sql1);
 
