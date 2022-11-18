@@ -1,7 +1,7 @@
 <?php
 include('../includes/db/conexion.php');
 session_start();
-
+$idf = $_SESSION['idemploy'];
 
 
 

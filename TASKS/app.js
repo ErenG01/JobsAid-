@@ -36,14 +36,14 @@ $(document).ready(function(){
     })
 
     $(document).on('click', '#Avancant', function(e){
-        $('#AsideContainerJob').remove();
+      $('#asidecontainervacantes').remove();
         let element = $(this)[0].parentElement;
         let idv = $(element).attr('vacantid');
         console.log(idv);
         $.post('TASKS/task-show.php', {idv}, function(response) {
             const task = JSON.parse(response);
             const valor = `
-            <aside class="AsideContainerJob" id="AsideContainerJob" vacantid="${task.id}">
+            <div class="AsideContainerJob" id="AsideContainerJob" vacantid="${task.id}">
             <h4 class="h4">${task.titulovacante}</h4>
 
             <p class="font-weight-bold"></p>
@@ -81,9 +81,11 @@ $(document).ready(function(){
                 class="btn btn-primary">Postularse</button
                 type="submit"
               >
-            </aside>  
+            </div>  
               `;
-            $('#asidecontainervacantes').html(valor);
+              
+            $('#AsideContainerJob1').html(valor);
+            
             e.preventDefault();
         })
     })

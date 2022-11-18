@@ -109,7 +109,7 @@ button.btn.btn-primary{
     line-height: 1em;
 }
 
-.AsideContainerJob{
+.AsideContainerJob1{
     background-color: white;
     width: 50%;
     height: 30%;
@@ -125,5 +125,9 @@ button.btn.btn-primary{
     
     
 }
+/* .asidecontainervacantes{
+    width: 50%;
+    background-color: cadetblue;
+} */
 
 

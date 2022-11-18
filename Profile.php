@@ -14,6 +14,7 @@ session_start();
     <link rel="stylesheet" href="css/profile.css">
     <link rel="stylesheet" href="css/base.css">
     
+    
    
 </head>
 <body>
@@ -38,22 +39,22 @@ session_start();
                 <li><a href="" id="applications">postulaciones</a</li>
                 <li><a href="" id="emailBox">bandeja de entrada</a></li>
                 <li><a href="" id="settings">configuracion</a></li>
-                <li>hoja de vida</li>
+                <li><a href="" id="cv">hoja de vida</a></li>
             </ul>
           </div>   
     </div> 
 
-    <div class="perfil">
-      <img src="img/perfil.png" alt="" style="width: 250px;">
-      <p>carlos antonio</p>
+    <div class="perfil" id="perfil">
+      
     </div>
 
 
     <div class="containerprofile" id="containerprofile">
-      <div class="containerpostulacion" id="containerpostulacion">
-
-      </div>
+    
+    
     </div>
+
+    
 
     <footer class="" id="footers2">
       <script src="footer2.js"></script>

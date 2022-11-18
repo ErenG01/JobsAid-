@@ -204,57 +204,58 @@ if (!isset($_POST["modalidad"])){$_POST["modalidad"] = '';}
       </main>
         
       
-      <div class="asidecontainervacantes" id="asidecontainervacantes"></div>
-      <aside class="AsideContainerJob" id="AsideContainerJob" >
+      
+        <aside class="AsideContainerJob1" id="AsideContainerJob1" >
 
-        <h4 class="h4">Analista Administrativo Teletrabajo Bogota</h4>
+        <div class="asidecontainervacantes" id="asidecontainervacantes">                                            
+            <h4 class="h4">Analista Administrativo Teletrabajo Bogota</h4>
 
-        <p class="font-weight-bold">Teletrabajo Bogota</p>
-        <p>redes humanas  </p>
-        <p>Bogota, Cundinamarca</p>
-        
-        <button
-              class="btn btn-primary" id="postularse">Postularse</button
-              type="submit"
-          >
-        <button
-            class="btn btn-primary">✰</button
-            type="submit"
-          >
-        <hr> 
-        <p>¡Únete a una de las mejores compañías para laborar!
-          <br>
-          <br>
-          Quieres formas parte del equipo de trabajo de una de las empresas mas importantes del país?
-          <br>
-          <br>
-          Si eres técnico o tecnólogo en áreas administrativas y tienes conocimiento en manejo de bases de datos y Excel intermedio, esta oportunidad es para ti!
-          <br>
-          <br>
-          Serás la persona encargada de gestionar y analizar bases de datos, realizar la gestión documental y apoyar la ejecución del proyecto de Teletrabajo
-        </p>
-        <hr>
-        <p>¿Que te ofrecemos?</p>
-          <br>
-          <h4 class="font-weight-bold">Salario:</h4>
-          <br>
-          <h4 class="font-weight-bold">Horarios:</h4>
-          <br>
-          <h4 class="font-weight-bold">Lugar:</h4>
-          <br>
-        <p>Si te encuentras interesado y cumples con el perfil, postúlate!</p>  
-        <hr>
-        
-        <button
-            class="btn btn-primary" id="postularse">Postularse al empleo</button
-            type="submit"
-          >
-        
-        
+            <p class="font-weight-bold">Teletrabajo Bogota</p>
+            <p>redes humanas  </p>
+            <p>Bogota, Cundinamarca</p>
+            
+            <button
+                  class="btn btn-primary" id="postularse">Postularse</button
+                  type="submit"
+              >
+            <button
+                class="btn btn-primary">✰</button
+                type="submit"
+              >
+            <hr> 
+            <p>¡Únete a una de las mejores compañías para laborar!
+              <br>
+              <br>
+              Quieres formas parte del equipo de trabajo de una de las empresas mas importantes del país?
+              <br>
+              <br>
+              Si eres técnico o tecnólogo en áreas administrativas y tienes conocimiento en manejo de bases de datos y Excel intermedio, esta oportunidad es para ti!
+              <br>
+              <br>
+              Serás la persona encargada de gestionar y analizar bases de datos, realizar la gestión documental y apoyar la ejecución del proyecto de Teletrabajo
+            </p>
+            <hr>
+            <p>¿Que te ofrecemos?</p>
+              <br>
+              <h4 class="font-weight-bold">Salario:</h4>
+              <br>
+              <h4 class="font-weight-bold">Horarios:</h4>
+              <br>
+              <h4 class="font-weight-bold">Lugar:</h4>
+              <br>
+            <p>Si te encuentras interesado y cumples con el perfil, postúlate!</p>  
+            <hr>
+            
+            <button
+                class="btn btn-primary" id="postularse">Postularse al empleo</button
+                type="submit"
+              >
+          
+          </div> 
         
       
-      </aside>
-    </div>
+        </aside>
+  </div> 
     <footer class="" id="footers">
 
       <script src="footer.js"> </script>

@@ -1,41 +1,19 @@
 body{
     background-color: rgba(240, 240, 240, 0.918);
 }
-
-.navegator{
-    background-color: rgb(245, 245, 245);
-    display: flex;
-    margin-bottom: 4em;
+/* ///////////////////////GRID/////////////////////// */
+.generalcontainer{
+    background-color: rgb(236, 236, 236);
+    display: grid;
+    grid-template-columns: 15% 85%;
 }
 
-nav{
-    width: 95%;
-    background-color: burlywood;
-    
-}
-.navegator ul{
-    width: 50%;
-    
-    background-color: beige;
-    margin: auto;
-}
-.navegator ul li{
-    width: 50%;
-    
-    background-color:darkgreen;
-    
-}
-.imagen{
-    width: 250px;
-    background-color: aquamarine;
-}
-.containerOpciones{
-    width: 13%;
+.generalcontainer .containerOpciones{
+    width: 100%;
     background-color: rgb(54, 54, 94);
     height: 50em;
-    float: left;
     color: white;
-    position: fixed;
+    
 }
 .containerOpciones img{
     width: 250px;
@@ -43,14 +21,14 @@ nav{
 
 .uls{
 list-style: none;
-/*background-color: bisque;*/
+background-color: bisque;
 width: 50%;
 height: 90%;
 margin: auto;
 
 }
 .containerOpciones .uls li{
-   /* background-color: blueviolet;*/
+   background-color: blueviolet;
     padding-bottom: 2em;
     margin: 2em auto;
     
@@ -91,7 +69,7 @@ margin: auto;
 }
 
 .containerVacants{
-    /*background-color: chocolate;*/
+    background-color: chocolate;
     display: flex;
     margin: auto;
     width: 80%;
@@ -101,22 +79,23 @@ margin: auto;
     margin: auto;
 }
 .container1{
-   /* background-color: coral;*/
+   background-color: coral;
     width: 70%;
     margin: auto;
 }
 .MainContainerJob{
     background-color: white;
-    width: 98%;
+    width: 90%;
     margin: 1em auto;
     border-radius: 7px;
-    
     padding: 1em 1em;
     border: solid 1px;
     border-color: lightgray;
-    
-    
-    
+}
+.containerdivs{
+    background-color: chocolate;
+    width: 90%;
+    margin: auto;
 }
 .MainContainerJob ul li{
     list-style: none;
@@ -131,7 +110,7 @@ margin: auto;
 }
 .candidatos{
     width: 50%;
-    /*background-color: blue;*/
+    background-color: blue;
     border: solid 1px;
     margin: auto;
 }
@@ -149,4 +128,32 @@ margin: auto;
 }
 .formHV form input{
     margin: auto;
+}
+
+.InfoPerfilBox{
+    background-color: rgb(247, 247, 247);
+    width: 90%;
+    margin: 5em auto;
+    text-align: center;
+    border-radius: 7px;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    display: flex;
+}
+.imgPerfil{
+    width: 150px;
+    height: 150px;
+    border: solid 3px;
+    border-radius: 100%;
+}
+.InfoBox .ImgCV{
+
+    width: 60px;
+}
+.overflowcontainer{
+    background-color: rgb(122, 111, 103);
+    width: 80%;
+    height: 40em;
+    margin: auto;
+    overflow: auto;
 }
