@@ -11,8 +11,16 @@ $result = mysqli_query($conection, $query);
 $json= array();
 while ($row = mysqli_fetch_assoc($result)) {
     $json[] = array(
-        'picture' => $row['foto'],
-        'name' => $row['nombre']
+            'id' => $row['Id_usuario'],
+            'nombre' =>$row['nombre'],
+            'lastname' =>$row['apellido'],
+            'email' =>$row['correo'],
+            'usuario' => $row['usuario'],
+            'password' =>$row['clave'],
+            'phone' =>$row['telefono'],
+            'picture' =>$row['foto'],
+            'city' =>$row['ciudad'],
+            'profession' => $row['profesion']
     );
 
 }

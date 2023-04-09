@@ -18,12 +18,12 @@ session_start();
    
 </head>
 <body>
-<header class="Navegator" id="naveg">
-    <?php include("header.php");?>
-    <a href="cosa">
-      <img src="" alt="">
-    </a>
-  </header>
+      <header class="Navegator" id="naveg">
+          <?php include("header.php");?>
+          <a href="cosa">
+            <img src="" alt="">
+          </a>
+        </header>
 
  
   

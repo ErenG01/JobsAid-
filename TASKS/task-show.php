@@ -21,7 +21,7 @@
             'salary' =>$row['sueldo'],
             'timepayment' =>$row['tiempoPago'],
             'descvacante' =>$row['descripcion_vacante'],
-            'type' =>$row['tipoEmpleo']
+            'type' =>$row['modalidad']
         );
 
     }

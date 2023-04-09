@@ -1,7 +1,7 @@
 <?php
 include('../includes/db/conexion.php');
 
-if ($_POST["city"] =="" AND $_POST['salariodesde']=="" AND $_POST['salariohasta']=="" AND $_POST['tipoempleo']=="" AND $_POST['modality']==""){ 
+if (!isset($_POST["city"]) && !isset($_POST['salariodesde']) && !isset($_POST['salariohasta']) && !isset($_POST['tipoempleo']) && !isset($_POST['modality'])){ 
 
     $query = "SELECT * FROM `oferta empleo`";
     $result = mysqli_query($conection, $query);
@@ -21,32 +21,33 @@ if ($_POST["city"] =="" AND $_POST['salariodesde']=="" AND $_POST['salariohasta'
             'salary' =>$row['sueldo'],
             'timepayment' =>$row['tiempoPago'],
             'descvacante' =>$row['descripcion_vacante'],
-            'type' =>$row['tipoEmpleo']
+            'type' =>$row['modalidad']
         );
 
     }
     $jsonstring = json_encode($json);
     echo $jsonstring;
 }else{
+  
     $query = "SELECT * FROM `oferta empleo` where 1";
 
-    if ($_POST["city"] != '' ){
+    if (isset($_POST["city"]) && $_POST["city"] != ""){
       $query .= " and LugarEmpleo = '".$_POST['city']."' ";
     }
-    if ($_POST["salariodesde"] != '' ){
+    if (isset($_POST["salariodesde"]) && $_POST["salariodesde"] != ""){
       $query .= " and sueldo >= '".$_POST['salariodesde']."' ";
     }
-    if ($_POST["salariohasta"] != '' ){
+    if (isset($_POST["salariohasta"]) && $_POST["salariohasta"] !=""){
       $query .= " and sueldo <= '".$_POST['salariohasta']."' ";
     }
-    if ($_POST["tipoempleo"] != '' ){
+    if (isset($_POST["tipoempleo"]) && $_POST["tipoempleo"] != ""){
       $query .= " and tipoEmpleo = '".$_POST['tipoempleo']."' ";
     }
-    if ($_POST["modality"] != '' ){
-      $query .= " and departamento = '".$_POST['modality']."' ";
+    if (isset($_POST["modality"]) && $_POST["modality"] != ""){
+      $query .= " and modalidad = '".$_POST['modality']."' ";
     }
     
-  
+    
     $json = array();
     $result = mysqli_query($conection, $query);
     while($row=mysqli_fetch_assoc($result)) {
@@ -59,7 +60,7 @@ if ($_POST["city"] =="" AND $_POST['salariodesde']=="" AND $_POST['salariohasta'
             'salary' =>$row['sueldo'],
             'timepayment' =>$row['tiempoPago'],
             'descvacante' =>$row['descripcion_vacante'],
-            'type' =>$row['tipoEmpleo']
+            'type' =>$row['modalidad']
         );
     }
     $jsonstring = json_encode($json);

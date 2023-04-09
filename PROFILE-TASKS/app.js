@@ -15,9 +15,9 @@ $(document).ready(function(){
                 
                 <h1 class="font-weight-bold">${tasks[0]['nombre']}</h1>
                 <h1 class="font-weight-bold">${tasks[0]['lastname']}</h1>
-                <p>Asistente Administrativo</p>
-                <p>Bogota</p>
-                <p>Cundinamarca</p>
+                <p>${tasks[0]['profession']}</p>
+                <p>${tasks[0]['city']}</p>
+                
                 <hr>
                 <h1 class="font-weight-bold">Archivo subido</h1>
                 <img src="img/CV_3.png" alt=""  class="ImgCV" style="width: 150px;">
@@ -68,18 +68,19 @@ $(document).ready(function(){
                 <div class="InfoPerfilBox">
 
                 <img class="imgPerfil" src="${tasks[0]['picture']}" alt="" >
-                <h1 class="font-weight-bold">Sofia Rodriguez</h1>
-                <p>Asistente Administrativo</p>
-                <p>Bogota</p>
-                <p>Cundinamarca</p>
+                <h1 class="font-weight-bold">${tasks[0]['nombre']}</h1>
+                <h1 class="font-weight-bold">${tasks[0]['lastname']}</h1>
+                <p>${tasks[0]['profession']}</p>
+                <p>${tasks[0]['city']}</p>
+                
                 <hr>
                 <h1 class="font-weight-bold">Archivo subido</h1>
                 <img src="img/CV_3.png" alt=""  class="ImgCV" style="width: 150px;">
                 <p>CVSofiarodriguez.pdf</p>
                 <hr>
                 <h1 class="font-weight-bold">informacion de contacto</h1>
-                <p>sofiarodriguez12@gmail.com</p>
-                <p>3133095358</p>
+                <p>${tasks[0]['email']}</p>
+                <p>${tasks[0]['phone']}</p>
             </div>
         </div>
         `;

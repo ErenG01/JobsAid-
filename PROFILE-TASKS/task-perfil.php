@@ -17,7 +17,9 @@ while ($row = mysqli_fetch_assoc($result)) {
             'usuario' => $row['usuario'],
             'password' =>$row['clave'],
             'phone' =>$row['telefono'],
-            'picture' =>$row['foto']
+            'picture' =>$row['foto'],
+            'profession' =>$row['profesion'],
+            'city' =>$row['ciudad']
     );
 }
 $jsonstring = json_encode($json);

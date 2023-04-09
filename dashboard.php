@@ -33,7 +33,13 @@
     
     <div class="subcontainer2" id="subcontainer2">
 
-        
+        <div class="navEmployeed" id="navEmployeed">
+            <ul>
+                <li>esperanza@gmail.com</li>
+                <li>TextilSAS</li>
+                
+            </ul>
+        </div>
 
         
 

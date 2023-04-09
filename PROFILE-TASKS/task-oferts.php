@@ -22,7 +22,7 @@ $result = mysqli_query($conection, $query);
             'salary' =>$row['sueldo'],
             'timepayment' =>$row['tiempoPago'],
             'descvacante' =>$row['descripcion_vacante'],
-            'type' =>$row['tipoEmpleo']
+            'type' =>$row['modalidad']
         );
     }
     $jsonstring = json_encode($json);

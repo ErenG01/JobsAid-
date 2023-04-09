@@ -50,29 +50,27 @@ if (!isset($_POST["modalidad"])){$_POST["modalidad"] = '';}
           
               <label class="imput" for="nombre">Cargo o titulo</label>
               <input
-                name="nombre"
-                id="nombre"
+                name="cargo"
+                id="cargo"
                 class="labeltext "
                 type="text"
                 placeholder=""
-                required
                 data-nombre
                 width="12px"
                 height="12px"
               />
               <label class="imput" for="nombre">Ciudad</label>
               <input
-                name="nombre"
-                id="nombre"
+                name="ciudad"
+                id="ciudad"
                 class="labeltext"
                 type="text"
                 placeholder=""
-                required
                 data-nombre
                 
               />
               
-              <button type="submit" class="btn btn-primary">Buscar ofertas</button>
+              <button type="submit" id="BtnSearchOferts" class="btn btn-primary">Buscar ofertas</button>
               
           
             

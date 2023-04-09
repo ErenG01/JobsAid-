@@ -1,6 +1,8 @@
 $(document).ready(function(){
 
     console.log("holamundo");
+    $('#filtro').hide();
+    $('#ContainerJobs').hide();
 
     $.ajax({
         url: 'TASKS/task-list.php',
@@ -33,6 +35,58 @@ $(document).ready(function(){
             $('#MainContainerJobs').html(div)
             
         }
+    })
+
+    $(document).on('click', '#BtnSearchOferts', function(e){
+
+      $('#filtro').show();
+      $('#ContainerJobs').show();
+      
+      let puesto= $('#cargo').val();
+      let ciudad= $('#ciudad').val();
+
+      $.ajax({
+        url: 'TASKS/task-searchOfert.php',
+        type: 'POST',
+        data: { cargo: puesto,
+                city: ciudad,
+                },
+        success: function(response){
+          let tasks = JSON.parse(response);
+          let div = '';
+          tasks.forEach(task =>{
+            div += `
+            <div class="MainContainerJob" id="MainContainerJob" vacantid="${task.id}">
+            <a hfre="#" id="Avancant">
+            <h4 class="h4">${task.titulovacante}</h4>
+            <p>${task.industria}</p>
+            <p>${task.lugarempleo}</p>
+            <br>
+            <ul>
+                <li><p>Salario:${task.salary}</p></li>
+                <li><p>${task.descvacante}</p></li>
+                <li><p>Horario: lunes a viernes de 7:00am a 5:30pm</p></li>
+            </ul>
+  
+            <br>
+            <p>${task.type}</p>
+            <button
+            id="enviarbt"
+            class="enviarbt btn btn-primary">enviar</button
+            type="submit"
+            >
+            <p>${task.id}</p>
+            <p>publicado hace mas de 30 dias de Bogota,Cundinamarca</p>
+            </a>
+            </div>`
+          });
+          $('#MainContainerJobs').html(div)
+        }        
+        
+      })
+      
+
+      e.preventDefault();
     })
 
     $(document).on('click', '#Avancant', function(e){
@@ -91,6 +145,7 @@ $(document).ready(function(){
     })
 
     $(document).on('click', '#btnFiltroVer', function (eve) {
+      $('#MainContainerJob').remove();
       let cuidad= $('#buscadepartamento').val();
       let sala_desde = $('#buscarsalariodesde').val();
       let sala_hasta = $('#buscarsalariohasta').val();
@@ -110,6 +165,7 @@ $(document).ready(function(){
           tasks.forEach(task =>{
             div += `
             <div class="MainContainerJob" id="MainContainerJob" vacantid="${task.id}">
+            <a hfre="#" id="Avancant">
             <h4 class="h4">${task.titulovacante}</h4>
             <p>${task.industria}</p>
             <p>${task.lugarempleo}</p>
@@ -129,9 +185,10 @@ $(document).ready(function(){
             >
             <p>${task.id}</p>
             <p>publicado hace mas de 30 dias de Bogota,Cundinamarca</p>
+            </a>
             </div>`
           });
-          $('#MainContainerJob').html(div)
+          $('#MainContainerJobs').html(div)
         }        
         
       })
@@ -146,8 +203,8 @@ $(document).ready(function(){
         let element = $(this)[0].parentElement;
         let idv = $(element).attr('vacantid');
         $.post('TASKS/task-add.php', {idv}, function(response) {
-            console.log(response);
-            console.log('se postulo correctamente');
+            window.alert(response);
+            
         });
     
         
