@@ -1,5 +1,10 @@
 $(document).ready(function(){
 
+  $("#Navegator").css({
+    "background-color": "none",
+  
+  });
+
     console.log("holamundo");
     $('#filtro').hide();
     $('#ContainerJobs').hide();
@@ -38,6 +43,29 @@ $(document).ready(function(){
     })
 
     $(document).on('click', '#BtnSearchOferts', function(e){
+
+      $(".Navegator").css({
+        "color": "black"
+      
+      });
+
+      $("#header_img").css({
+        "padding-top": "1em",
+        "padding-bottom": "1em",
+      
+      });
+
+      $(".HeaderAndForm").css({
+        "background-image": "none"
+      
+      });
+
+      $(".formulario").css({
+        "color": "black"
+      
+      });
+
+      $('.SectionArticles').hide();
 
       $('#filtro').show();
       $('#ContainerJobs').show();

@@ -36,51 +36,54 @@ if (!isset($_POST["modalidad"])){$_POST["modalidad"] = '';}
     
 <div class="HeaderAndForm">
 
-  <header class="Navegator" id="naveg">
-    <?php include("layouts/header.php");?>
-    <a href="cosa">
-      <img src="" alt="">
-    </a>
-  </header>
-  <div class="header_img">
-        
-          <h4 class="h4">Buscar Empleo </h4>
-          
-          <form class="formulario" data-form>
-          
-              <label class="imput" for="nombre">Cargo o titulo</label>
-              <input
-                name="cargo"
-                id="cargo"
-                class="labeltext "
-                type="text"
-                placeholder=""
-                data-nombre
-                width="12px"
-                height="12px"
-              />
-              <label class="imput" for="nombre">Ciudad</label>
-              <input
-                name="ciudad"
-                id="ciudad"
-                class="labeltext"
-                type="text"
-                placeholder=""
-                data-nombre
-                
-              />
-              
-              <button type="submit" id="BtnSearchOferts" class="btn btn-primary">Buscar ofertas</button>
-              
-          
-            
-            
-          </form>
+  <div class="containerHeader">
 
-      
-        <hr>
-  </div>
+    <header class="Navegator" id="naveg">
+      <?php include("layouts/header.php");?>
+      <a href="cosa">
+        <img src="" alt="">
+      </a>
+    </header>
+    <div class="header_img" id="header_img">
+          
+            <h4 class="h4">Buscar Empleo </h4>
+            
+            <form class="formulario" data-form>
+            
+                <label class="imput" for="nombre">Cargo o titulo</label>
+                <input
+                  name="cargo"
+                  id="cargo"
+                  class="labeltext "
+                  type="text"
+                  placeholder=""
+                  data-nombre
+                  width="12px"
+                  height="12px"
+                />
+                <label class="imput" for="nombre">Ciudad</label>
+                <input
+                  name="ciudad"
+                  id="ciudad"
+                  class="labeltext"
+                  type="text"
+                  placeholder=""
+                  data-nombre
+                  
+                />
+                
+                <button type="submit" id="BtnSearchOferts" class="btn btn-success">Buscar ofertas</button>
+                
+            
+              
+              
+            </form>
+
         
+          <hr>
+    </div>
+  </div>
+
   <div class="filtro" id="filtro">   
     <div class="col-11">
 
@@ -253,7 +256,31 @@ if (!isset($_POST["modalidad"])){$_POST["modalidad"] = '';}
         
       
         </aside>
+        
   </div> 
+
+
+
+    <div class="SectionArticles">
+                    <div className="Article1">
+                       
+                       <img src="img/bombilla.png"></img>
+                       <p>La rapidez es otra de las características cuando buscamos trabajo por internet. </p>
+                   </div>
+
+                   <div className="Article2">
+                       
+                       <img src="img/estadistica.png"></img>
+                       <p>la facilidad para encontrar trabajo. Es lógico; a cuantas más ofertas puedas aplicar</p>
+                   </div>
+
+                   <div className="Article3">
+                       
+                       <img src="img/icono_trabajadores.png"></img>
+                       <p>puedes ahorrarte ese posible inconveniente y buscar y aplicar a las ofertas desde tu propia casa.</p>
+                   </div>
+
+    </div>
     <footer class="" id="footers">
 
       <script src="layouts/footer.js"> </script>

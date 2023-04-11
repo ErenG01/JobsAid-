@@ -4,32 +4,40 @@
 body{
     font-family: "Montserrat", sans-serif;
 }
+.Navegator{
+    
+    color: rgb(252, 252, 252);
+}
 .formulario{
-    background-color:aliceblue;
+    z-index: 2;
     margin: auto;
     text-align: center;
     width: 600px;
     height: 100px;
     padding-top: 1em;
+    color: white;
+    background-color: rgba(153, 151, 151, 0.5);
 }
 .header_img{
-    margin-top: 3em;
-    margin-bottom: 3em;
+    padding: 8em 8em;
+    
 }
 .header_img .h4{
+    font-size: 2em;
     text-align: center;
+    color: white;
 }
 .HeaderAndForm{
     z-index: 1;
-    background-image: url("");
+    background-image: url(../img/fondoIMg.jpg);
     background-repeat: no-repeat;
-
+    
     margin: auto;
     padding-bottom: 1em;
     position: relative;
     width: 100%;
 }
-button.btn.btn-primary{
+button.btn.btn-success{
     margin: 1em auto;
 }
 
@@ -129,5 +137,22 @@ button.btn.btn-primary{
     width: 50%;
     background-color: cadetblue;
 } */
+
+.SectionArticles{
+    /* background-color: gray; */
+    display: flex;
+    width: 70%;
+    margin: auto;
+    text-align: center;
+}
+
+.SectionArticles div{
+    margin: auto;
+    
+    width: 25%;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    
+}
 
 
