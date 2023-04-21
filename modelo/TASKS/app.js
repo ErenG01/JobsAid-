@@ -44,9 +44,22 @@ $(document).ready(function(){
 
     $(document).on('click', '#BtnSearchOferts', function(e){
 
+      $('.LogoClass').remove();
+      const logo = `
+      <img
+      src="img/Logo_V3.png"
+      title = "logoJobs"
+      class="LogoClass"
+      width = 100px;
+      height = 100px;
+      ></img>
+      `
+      $('.Logo').html(logo);
+
+
       $(".Navegator").css({
-        "color": "black"
-      
+        "color": "black",
+        "background-color": "lightgray"
       });
 
       $("#header_img").css({
@@ -98,12 +111,8 @@ $(document).ready(function(){
   
             <br>
             <p>${task.type}</p>
-            <button
-            id="enviarbt"
-            class="enviarbt btn btn-primary">enviar</button
-            type="submit"
-            >
-            <p>${task.id}</p>
+          
+            
             <p>publicado hace mas de 30 dias de Bogota,Cundinamarca</p>
             </a>
             </div>`

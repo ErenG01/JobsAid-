@@ -16,8 +16,9 @@
     width = 100px;
     height = 100px;
     ></img>
+   
   </a>
-  </div>
+</div>
 
   <nav>
        
@@ -31,7 +32,7 @@
             
             ?>
             <li class="header__link"><a href="./">Inicio</a></li>
-            <li class="header__link"><a href="../Jobs_Aid_Employers/vista/Reclutamiento.php">Publicar oferta</a></li>
+            <li class="header__link"><a href="../Jobs_Aid_Employers/proximamente.html">Publicar oferta</a></li>
             <li class="header__link"><a href="Acceso_Usuario.php">Hoja de vida</a></li>
             <a href = "Acceso_Usuario.php" class ="login">
     
@@ -48,7 +49,7 @@
             $mostrarnombre = $_SESSION['nombreusu'];
         ?>
         <li class="header__link"><a href="./">Inicio</a></li>
-            <li class="header__link"><a href="../Jobs_Aid_Employers/vista/Reclutamiento.php">Publicar oferta</a></li>
+            <li class="header__link"><a href="../Jobs_Aid_Employers/proximamente.html">Publicar oferta</a></li>
             <li class="header__link"><a href="profile.php">Perfil</a></li>
         <div class="login2">
             <div class="login3">
